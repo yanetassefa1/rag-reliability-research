@@ -1,0 +1,51 @@
+{
+  "clean_level0": {
+    "n": 8,
+    "accuracy_rate": 0.875,
+    "hallucination_rate": 0.0,
+    "grounding_rate": 0.875,
+    "abstention_rate": 0.0
+  },
+  "irrelevant_level1": {
+    "n": 8,
+    "accuracy_rate": 0.875,
+    "hallucination_rate": 0.0,
+    "grounding_rate": 0.875,
+    "abstention_rate": 0.0
+  },
+  "irrelevant_level3": {
+    "n": 8,
+    "accuracy_rate": 0.75,
+    "hallucination_rate": 0.0,
+    "grounding_rate": 0.875,
+    "abstention_rate": 0.125
+  },
+  "contradictory_level1": {
+    "n": 8,
+    "accuracy_rate": 0.5,
+    "hallucination_rate": 0.375,
+    "grounding_rate": 0.75,
+    "abstention_rate": 0.125
+  },
+  "contradictory_level2": {
+    "n": 8,
+    "accuracy_rate": 0.375,
+    "hallucination_rate": 0.25,
+    "grounding_rate": 0.625,
+    "abstention_rate": 0.375
+  },
+  "misleading_level1": {
+    "n": 8,
+    "accuracy_rate": 0.625,
+    "hallucination_rate": 0.125,
+    "grounding_rate": 0.75,
+    "abstention_rate": 0.25
+  },
+  "misleading_level2": {
+    "n": 8,
+    "accuracy_rate": 0.5,
+    "hallucination_rate": 0.125,
+    "grounding_rate": 0.625,
+    "abstention_rate": 0.375
+  }
+}
