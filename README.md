@@ -15,7 +15,7 @@ The goal is to characterize *how* and *when* RAG-based LLMs fail, producing a re
 ## Key Findings
 
 - Contradictory noise caused the steepest accuracy degradation and highest hallucination rates
-- Misleading noise triggered over-abstention — the model refused answerable questions
+- Misleading noise caused moderate accuracy loss and occasional over-abstention— the model refused answerable questions
 - Irrelevant noise had minimal effect when the correct document was also present
 - **Grounded hallucination** — citing a noisy source to support a wrong answer — was the most dangerous failure pattern identified
 - Abstention increased under high-conflict conditions, trading accuracy for coverage
@@ -56,9 +56,9 @@ rag-reliability-research/
 | Irrelevant × 1 | 1 off-topic document added |
 | Irrelevant × 3 | 3 off-topic documents added |
 | Contradictory × 1 | 1 factually incorrect document contradicting ground truth |
-| Contradictory × 2 | 2 conflicting documents |
+|1 contradictory document + 1 irrelevant document|
 | Misleading × 1 | 1 document casting doubt on the correct answer |
-| Misleading × 2 | 2 misleading documents |
+|1 misleading document + 1 irrelevant document|
 
 ### Evaluation Dimensions
 
@@ -130,7 +130,7 @@ After running, `results/summary.json` contains aggregated metrics for each noise
 - Single model evaluated
 - Synthetic noise, not real retrieval failures
 - No mitigation experiments (future work)
-
+-Results in summary.json were generated with an earlier version of the scoring script; the current version scores hallucination only for contradictory conditions.
 ---
 
 ## Research Context
